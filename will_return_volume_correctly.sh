@@ -1,14 +1,16 @@
 #!/bin/bash
 
-h = 1
-w = 2
-l = 3
+h=5
+w=6
+l=2
 
 ./calculate_volume.sh $h $w $l
 
 RESULT=$(./calculate_volume.sh $h $w $l)
  
-if [[ $RESULT -eq 6 ]];
+echo "The volume calculated by multiplying height, width and length is $RESULT"
+
+if [[ $RESULT -eq 60 ]];
 then
 	echo "Success"
 else 

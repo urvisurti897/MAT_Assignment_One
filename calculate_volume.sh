@@ -4,4 +4,6 @@ H=$1
 W=$2
 L=$3
 
-RESULT=$((H*W*L))
+RESULT=$((H * W * L))
+
+echo $RESULT
